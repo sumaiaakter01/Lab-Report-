@@ -1,0 +1,32 @@
+using System;
+
+public class Program
+{
+    
+    public void Display(int num)
+    {
+        Console.WriteLine("Integer: " + num);
+    }
+
+    
+    public void Display(string text)
+    {
+        Console.WriteLine("String: " + text);
+    }
+
+    
+    public void Display(int num, double dec)
+    {
+        Console.WriteLine("Integer: " + num + ", Double: " + dec);
+    }
+
+    public static void Main()
+    {
+        Program program = new Program();
+        
+       
+        program.Display(10);         
+        program.Display("Hello");    
+        program.Display(5, 3.14);    
+    }
+}
